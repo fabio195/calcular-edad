@@ -1,0 +1,13 @@
+<title>Calcular Edad - Docker Fabio</title>
+<h4 scope>Fabio Muñoz</h4>
+<h5>Computación en la nube - UTN FRM</h5>
+<hr>
+<h5>Ingrese la fecha de nacimiento</h5>
+<input type="date"
+       [(ngModel)]="fechaIngresada">
+<br>
+<hr>
+<label>Su edad es de: </label> <input type="text" placeholder="{{ calcularEdad(fechaIngresada) }}" disabled> 
+<hr>
+<p> {{ ciudad }}, {{ hoy | date: 'd-M-y'}} a las {{ hoy | date: 'H:m'}} </p>
+<p> {{ copyright }} {{ hoy | date: 'y'}} </p>

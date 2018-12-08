@@ -1,0 +1,10 @@
+1- Crear Dockerfile
+2- Ejecutar docker build -t edad-fabio . en la carpeta donde estan los dos archivos
+3- Una vez finalizado, ejecutar: docker run -it \            
+  -v ${PWD}:/usr/src/app-calcular-edad \
+  -v /usr/src/app-calcular-edad/node_modules \
+  -p 4200:4200 \
+  --rm \
+  edad-edad
+4- En un navegador, escribir la dirección: http://localhost:4200
+5- Eligiendo una fecha de nacimiento, mostrará la edad exacta!

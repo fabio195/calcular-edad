@@ -1,0 +1,14 @@
+version: '3.1.0'
+
+services:
+
+  fabio-edad:
+    container_name: fabio-edad
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app-calcular-edad'
+      - '/usr/src/app-calcular-edad/node_modules'
+    ports:
+      - '4200:4200'
